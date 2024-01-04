@@ -35,14 +35,6 @@ def start(update: Update, context: CallbackContext):
         f"ᴄʟɪᴄᴋ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ᴍᴇ"
     )
     return ConversationHandler.END
-    
-def donate(update: Update, context: CallbackContext):
-    donate_message = (
-        "If you liked me ❤️, consider making a donation to support my developer 👦\n"
-        "UPI ID - `krishna527062@oksbi`"
-    )
-    update.message.reply_text(donate_message, parse_mode=ParseMode.MARKDOWN)
-
 
 def help_command(update: Update, context: CallbackContext):
     update.message.reply_text(
